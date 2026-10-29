@@ -1,3 +1,8 @@
+// MPI program to find sum of first N integers using any given
+//number of processes. Example, N=10,000 and no. of processes
+//can be 4 or 8 or 12 etc.
+
+
 #include <stdio.h>
 #include <mpi.h>
 
@@ -43,3 +48,7 @@ int main(int argc, char** argv) {
     MPI_Finalize();
     return 0;
 }
+
+
+mpicc array_mpi.c -o array_mpi
+mpirun -np 4 ./array_mpi
