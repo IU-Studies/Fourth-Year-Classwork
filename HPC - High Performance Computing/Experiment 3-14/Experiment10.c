@@ -1,3 +1,7 @@
+//MPI program to send two numbers (array elements) per
+//process to a Root process and print the received messages.
+
+
 #include <stdio.h>
 #include <mpi.h>
 
@@ -37,3 +41,8 @@ int main(int argc, char** argv) {
     MPI_Finalize();
     return 0;
 }
+
+
+
+mpicc array_mpi.c -o array_mpi
+mpirun -np 4 ./array_mpi
