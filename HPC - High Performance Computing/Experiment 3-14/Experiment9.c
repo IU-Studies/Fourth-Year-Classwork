@@ -1,3 +1,9 @@
+// Write MPI Program to print "Hello World".
+// MPI program to send and receive Hello World messages from
+// all other processes to a Root process and print the received
+// messages.
+
+
 #include <stdio.h>
 #include <string.h>
 #include <mpi.h>
@@ -32,3 +38,7 @@ int main(int argc, char** argv) {
     MPI_Finalize();
     return 0;
 }
+
+
+mpicc hello_mpi.c -o hello_mpi
+mpirun -np 4 ./hello_mpi
