@@ -1,3 +1,9 @@
+//Write a Parallel C program where the iterations of a loop
+// should be scheduled statically across the team of threads. A
+// Mthread should perform CHUNK iterations at a time before
+// being scheduled for the next CHUNK of work.
+
+
 #include <stdio.h>
 #include <omp.h>
 
