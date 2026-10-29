@@ -1,3 +1,7 @@
+// Write a Parallel C program which should print the series of 2
+// and 4. Make sure both should be executed by different threads.
+
+
 #include <stdio.h>
 #include <omp.h>
 
