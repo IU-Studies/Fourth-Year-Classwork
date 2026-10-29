@@ -1,3 +1,9 @@
+// Write a C program utilizing OpenMP directives to demonstrate
+// the behavior of the private clause.
+// Steps to follow :
+// ▪ Open text editor. ▪ write the below program in it. ▪ Save the file with .c extentation. ▪ Compile and execuate with given commands.
+
+
 #include <stdio.h>
 #include <omp.h>
 
