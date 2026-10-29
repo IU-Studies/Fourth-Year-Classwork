@@ -1,3 +1,8 @@
+// MPI program to find sum of n integers on in which processors
+// are arranged in ring topology using MPI point-to-point
+/// blocking communication library calls.
+
+
 #include <stdio.h>
 #include <mpi.h>
 
